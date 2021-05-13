@@ -16,7 +16,10 @@ class SecondScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ThirdScreen()));
+              },
               child: Text("Tela Três"),
             ),
             ElevatedButton(
